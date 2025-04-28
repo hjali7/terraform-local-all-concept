@@ -12,7 +12,7 @@ resource "docker_image" "storage_image" {
 
 resource "docker_container" "storage_container" {
   name  = var.container_name
-  image = docker_image.storage_image.latest
+  image = docker_image.storage_image.name
 
   env = [
     "MINIO_ACCESS_KEY=${var.access_key}",

@@ -1,4 +1,3 @@
-# providers.tf
 terraform {
   required_version = ">= 1.5.0"
   required_providers {
@@ -10,5 +9,5 @@ terraform {
 }
 
 provider "docker" {
-  host = "unix:///var/run/docker.sock"
+  host = "npipe:////./pipe/docker_engine"
 }

@@ -14,7 +14,7 @@ resource "docker_image" "db_image" {
 
 resource "docker_container" "db_container" {
   name = var.container_name
-  image = docker_image.db_image.latest
+  image = docker_image.db_image.name
 
   env = [
     "POSTGRES_USER=${var.db_user}",

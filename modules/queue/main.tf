@@ -13,7 +13,7 @@ resource "docker_image" "queue_image" {
 
 resource "docker_container" "queue_container" {
   name = var.container_name
-  image = docker_image.queue_image.latest
+  image = docker_image.queue_image.name
   env = [
     "RABBITMQ_DEFAULT_USER=${var.rabbitmq_user}",
     "RABBITMQ_DEFAULT_PASS=${var.rabbitmq_password}"
