@@ -1,0 +1,16 @@
+# .dockerignore
+.git
+.gitignore
+*.tfstate
+*.tfstate.*
+.terraform/
+*.log
+.env
+*.backup
+*.pid
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+# .gitignore
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash
+*.log
+*.backup
+.terraform.lock.hcl
+
+# Local env files
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+*.pid
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
