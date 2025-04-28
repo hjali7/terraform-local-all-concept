@@ -22,3 +22,13 @@ variable "minio_secret_key" {
   description = "Secret Key for MinIO"
   type        = string
 }
+
+variable "rabbitmq_user" {
+  description = "Default RabbitMQ username"
+  type        = string
+}
+
+variable "rabbitmq_password" {
+  description = "Default RabbitMQ password"
+  type        = string
+}
