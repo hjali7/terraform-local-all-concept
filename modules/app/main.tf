@@ -12,7 +12,7 @@ resource "docker_image" "app_image" {
 }
 
 resource "docker_container" "app_container" {
-  name = var.container_name
+  name  = var.container_name
   image = docker_image.app_image.name
   ports {
     internal = var.container_port

@@ -1,4 +1,4 @@
-variable "container_name"  {
+variable "container_name" {
   description = "Name of the container to be created"
   type        = string
 }

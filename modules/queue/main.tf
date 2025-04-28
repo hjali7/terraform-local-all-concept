@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.0.0"
   required_providers {
     docker = {
-        source = "kreuzwerker/docker"
+      source = "kreuzwerker/docker"
     }
   }
 }
@@ -12,7 +12,7 @@ resource "docker_image" "queue_image" {
 }
 
 resource "docker_container" "queue_container" {
-  name = var.container_name
+  name  = var.container_name
   image = docker_image.queue_image.name
   env = [
     "RABBITMQ_DEFAULT_USER=${var.rabbitmq_user}",
