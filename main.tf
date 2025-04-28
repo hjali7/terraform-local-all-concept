@@ -35,3 +35,15 @@ module "queue" {
   rabbitmq_password = var.rabbitmq_password
 }
 
+
+module "monitoring" {
+  source = "./modules/monitoring"
+
+  prometheus_container_name = "prometheus"
+  grafana_container_name    = "grafana"
+  prometheus_image_name     = "prom/prometheus"
+  grafana_image_name        = "grafana/grafana"
+  prometheus_port           = 9090
+  grafana_port              = 3000
+}
+
