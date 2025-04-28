@@ -1,0 +1,5 @@
+db_user     = "admin"
+db_password = "adminpassword"
+db_name     = "mydatabase"
+minio_access_key = "minioadmin"
+minio_secret_key = "minioadmin"
